@@ -13,36 +13,38 @@
       background-color: white;
       color: #222;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 14px;
+      line-height: 1.45;
     }
 
     .container {
-      max-width: 1050px;
+      max-width: 950px;
       margin: 0 auto;
-      padding: 50px 30px;
+      padding: 25px 25px 18px;
     }
 
     h1 {
-      margin: 0 0 35px;
+      margin: 0 0 12px;
+      color: #1a5a96;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 42px;
+      font-size: 25px;
       font-weight: normal;
+      text-align: center;
     }
 
     h2 {
-      margin-top: 55px;
-      margin-bottom: 20px;
-      padding-bottom: 8px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
       border-bottom: 1px solid #dddddd;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 27px;
+      font-size: 21px;
       font-weight: normal;
     }
 
     p {
-      margin-top: 6px;
-      margin-bottom: 16px;
+      margin-top: 4px;
+      margin-bottom: 10px;
     }
 
     a {
@@ -56,44 +58,38 @@
 
     .top-section {
       display: grid;
-      grid-template-columns: 1fr 310px;
-      gap: 65px;
-      align-items: start;
-    }
-
-    .welcome {
-      margin-top: 0;
-      margin-bottom: 22px;
-      border-bottom: none;
-      padding-bottom: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 29px;
-      font-weight: normal;
+      grid-template-columns: 1fr 245px;
+      gap: 55px;
+      align-items: center;
     }
 
     .profile-photo {
       display: block;
       width: 100%;
-      max-width: 310px;
+      max-width: 245px;
       height: auto;
     }
 
     .contact {
-      margin-top: 28px;
+      margin-top: 17px;
     }
 
     .contact-title {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
       font-weight: bold;
     }
 
     .paper {
-      margin-bottom: 32px;
+      margin-bottom: 17px;
     }
 
     .paper-title {
-      margin-bottom: 4px;
+      margin-bottom: 2px;
       font-weight: bold;
+    }
+
+    .paper-title a {
+      color: #222;
     }
 
     .paper-details {
@@ -102,7 +98,7 @@
     }
 
     .paper-links {
-      margin-top: 5px;
+      margin-top: 2px;
     }
 
     .status {
@@ -110,33 +106,34 @@
     }
 
     footer {
-      margin-top: 65px;
-      padding-top: 20px;
+      margin-top: 24px;
+      padding-top: 10px;
       border-top: 1px solid #dddddd;
       color: #777;
-      font-size: 14px;
+      font-size: 12px;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 700px) {
       .container {
-        padding: 30px 20px;
+        padding: 20px;
       }
 
       .top-section {
         grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .profile-photo {
-        max-width: 330px;
+        gap: 25px;
       }
 
       .photo-column {
         order: -1;
       }
 
+      .profile-photo {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+
       h1 {
-        font-size: 34px;
+        font-size: 24px;
       }
     }
   </style>
@@ -146,24 +143,19 @@
 
   <div class="container">
 
-    <h1>Elena Scola Gagliardi</h1>
-
     <div class="top-section">
 
       <div class="text-column">
 
-        <h2 class="welcome">Welcome!</h2>
-
         <p>
           I am a third-year PhD student in Economics at Sapienza University
-          of Rome. My research interests are in macroeconomics, monetary and
-          fiscal policy, and inequality.
+          of Rome. My research interests are in macroeconomics, fiscal and
+          monetary policy, and inequality.
         </p>
 
         <p>
-          In 2025, I was a visiting PhD student at Universidad Carlos III
-          de Madrid (UC3M). In 2026, I joined the Bank of Italy as a
-          research trainee.
+          In 2025, I visited Universidad Carlos III de Madrid (UC3M).
+          In 2026, I joined the Bank of Italy as a research trainee.
         </p>
 
         <div class="contact">
@@ -179,11 +171,15 @@
       </div>
 
       <div class="photo-column">
+
+        <h1>Elena Scola Gagliardi</h1>
+
         <img
           src="Profile_img.jpg"
           alt="Elena Scola Gagliardi"
           class="profile-photo"
         >
+
       </div>
 
     </div>
@@ -229,7 +225,13 @@
     <div class="paper">
 
       <p class="paper-title">
-        The Offensive Power of Defense News in Europe
+        <a
+          href="https://drive.google.com/file/d/1SurXstqNdQjReZMlN_qnHfHu3cC-FK1w/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The Offensive Power of Defense News in Europe
+        </a>
       </p>
 
       <p class="paper-details">
@@ -253,12 +255,6 @@
           target="_blank"
           rel="noopener noreferrer"
         >CEPR version</a>
-        |
-        <a
-          href="https://drive.google.com/file/d/1SurXstqNdQjReZMlN_qnHfHu3cC-FK1w/view"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Latest version</a>
       </p>
 
     </div>
