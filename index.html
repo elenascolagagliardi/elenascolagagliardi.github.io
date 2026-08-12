@@ -1,13 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Elena Scola Gagliardi</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: white;
+      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 50px 30px;
+    }
+
+    h1 {
+      margin: 0 0 35px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      font-weight: normal;
+    }
+
+    h2 {
+      margin-top: 55px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #dddddd;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: normal;
+    }
+
+    p {
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: #1a5a96;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .top-section {
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 65px;
+      align-items: start;
+    }
+
+    .welcome {
+      margin-top: 0;
+      margin-bottom: 22px;
+      border-bottom: none;
+      padding-bottom: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 29px;
+      font-weight: normal;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 100%;
+      max-width: 310px;
+      height: auto;
+    }
+
+    .contact {
+      margin-top: 28px;
+    }
+
+    .contact-title {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .paper {
+      margin-bottom: 32px;
+    }
+
+    .paper-title {
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .paper-details {
+      margin: 0;
+      color: #555;
+    }
+
+    .paper-links {
+      margin-top: 5px;
+    }
+
+    .status {
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 65px;
+      padding-top: 20px;
+      border-top: 1px solid #dddddd;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      .top-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .profile-photo {
+        max-width: 330px;
+      }
+
+      .photo-column {
+        order: -1;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to my website!</h1>
-  <h2>Elena Scola Gagliardi</h2>
-  <p>PhD Candidate in Economics at Sapienza University of Rome.</p>
+
+  <div class="container">
+
+    <h1>Elena Scola Gagliardi</h1>
+
+    <div class="top-section">
+
+      <div class="text-column">
+
+        <h2 class="welcome">Welcome!</h2>
+
+        <p>
+          I am a third-year PhD student in Economics at Sapienza University
+          of Rome. My research interests are in macroeconomics, monetary and
+          fiscal policy, and inequality.
+        </p>
+
+        <p>
+          In 2025, I was a visiting PhD student at Universidad Carlos III
+          de Madrid (UC3M). In 2026, I joined the Bank of Italy as a
+          research trainee.
+        </p>
+
+        <div class="contact">
+          <p class="contact-title">Contact Information</p>
+
+          <p>
+            <a href="mailto:elena.scolagagliardi@uniroma1.it">
+              elena.scolagagliardi@uniroma1.it
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="photo-column">
+        <img
+          src="Profile_img.jpg"
+          alt="Elena Scola Gagliardi"
+          class="profile-photo"
+        >
+      </div>
+
+    </div>
+
+    <h2>Publications</h2>
+
+    <div class="paper">
+
+      <p class="paper-title">
+        <a
+          href="https://www.sciencedirect.com/science/article/abs/pii/S0014292126001583"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Disentangling the Distributional Effects of Financial Shocks
+          in the Euro Area
+        </a>
+      </p>
+
+      <p class="paper-details">
+        with
+        <a
+          href="https://ciganovicmiloss.github.io/#home"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Miloš Ciganović</a>
+        and
+        <a
+          href="https://massimilianotancioni.site.uniroma1.it/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Massimiliano Tancioni</a>
+      </p>
+
+      <p class="paper-details status">
+        European Economic Review, 2026
+      </p>
+
+    </div>
+
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+
+      <p class="paper-title">
+        The Offensive Power of Defense News in Europe
+      </p>
+
+      <p class="paper-details">
+        with
+        <a
+          href="https://nadavbenzeev.weebly.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Nadav Ben Zeev</a>
+        and
+        <a
+          href="https://sites.google.com/site/evipappapersonalhomepage/home?authuser=0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Evi Pappa</a>
+      </p>
+
+      <p class="paper-details paper-links">
+        <a
+          href="https://cepr.org/publications/dp20637"
+          target="_blank"
+          rel="noopener noreferrer"
+        >CEPR version</a>
+        |
+        <a
+          href="https://drive.google.com/file/d/1SurXstqNdQjReZMlN_qnHfHu3cC-FK1w/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Latest version</a>
+      </p>
+
+    </div>
+
+    <div class="paper">
+
+      <p class="paper-title">
+        <a
+          href="https://emasavecon.github.io/docs/Main_WAEMU.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Monetary Dilemmas in the West African Union
+        </a>
+      </p>
+
+      <p class="paper-details">
+        with
+        <a
+          href="https://www.giovanni-ricco.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Giovanni Ricco</a>,
+        <a
+          href="https://emasavecon.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Emanuele Savini</a>
+        and
+        <a
+          href="https://anshumaan-tuteja.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Anshumaan Tuteja</a>
+      </p>
+
+    </div>
+
+    <footer>
+      Elena Scola Gagliardi
+    </footer>
+
+  </div>
+
 </body>
+
 </html>
