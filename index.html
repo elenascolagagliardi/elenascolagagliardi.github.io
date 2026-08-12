@@ -20,12 +20,12 @@
     .container {
       max-width: 950px;
       margin: 0 auto;
-      padding: 25px 25px 18px;
+      padding: 25px;
     }
 
     h1 {
       margin: 0 0 12px;
-      color: #1a5a96;
+      color: #222;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 25px;
       font-weight: normal;
@@ -63,20 +63,26 @@
       align-items: center;
     }
 
+    .photo-column {
+      text-align: center;
+    }
+
     .profile-photo {
       display: block;
       width: 100%;
       max-width: 245px;
       height: auto;
+      margin: 0 auto;
     }
 
-    .contact {
-      margin-top: 17px;
+    .photo-contact {
+      margin-top: 12px;
+      text-align: center;
+      line-height: 1.5;
     }
 
-    .contact-title {
-      margin-bottom: 2px;
-      font-weight: bold;
+    .photo-contact p {
+      margin: 3px 0;
     }
 
     .paper {
@@ -105,14 +111,6 @@
       font-style: italic;
     }
 
-    footer {
-      margin-top: 24px;
-      padding-top: 10px;
-      border-top: 1px solid #dddddd;
-      color: #777;
-      font-size: 12px;
-    }
-
     @media (max-width: 700px) {
       .container {
         padding: 20px;
@@ -129,7 +127,6 @@
 
       .profile-photo {
         max-width: 260px;
-        margin: 0 auto;
       }
 
       h1 {
@@ -158,16 +155,6 @@
           In 2026, I joined the Bank of Italy as a research trainee.
         </p>
 
-        <div class="contact">
-          <p class="contact-title">Contact Information</p>
-
-          <p>
-            <a href="mailto:elena.scolagagliardi@uniroma1.it">
-              elena.scolagagliardi@uniroma1.it
-            </a>
-          </p>
-        </div>
-
       </div>
 
       <div class="photo-column">
@@ -179,6 +166,26 @@
           alt="Elena Scola Gagliardi"
           class="profile-photo"
         >
+
+        <div class="photo-contact">
+
+          <p>
+            <a href="mailto:elena.scolagagliardi@uniroma1.it">
+              elena.scolagagliardi@uniroma1.it
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="CV_Elena_Scola_Gagliardi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Curriculum Vitae
+            </a>
+          </p>
+
+        </div>
 
       </div>
 
@@ -254,7 +261,9 @@
           href="https://cepr.org/publications/dp20637"
           target="_blank"
           rel="noopener noreferrer"
-        >CEPR version</a>
+        >
+          CEPR version
+        </a>
       </p>
 
     </div>
@@ -292,10 +301,6 @@
       </p>
 
     </div>
-
-    <footer>
-      Elena Scola Gagliardi
-    </footer>
 
   </div>
 
