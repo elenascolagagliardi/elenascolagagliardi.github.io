@@ -92,10 +92,14 @@
     .paper-title {
       margin-bottom: 2px;
       font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .paper-title a {
       color: #222;
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .paper-details {
@@ -103,12 +107,31 @@
       color: #555;
     }
 
+    .paper-details a {
+      color: #555;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
     .paper-links {
       margin-top: 2px;
     }
 
+    .paper-links a {
+      color: #1a5a96;
+    }
+
     .status {
       font-style: italic;
+    }
+
+    .publications-heading {
+      margin-top: -125px;
+      width: calc(100% - 300px);
+    }
+
+    .publications-heading + .paper {
+      width: calc(100% - 300px);
     }
 
     @media (max-width: 700px) {
@@ -131,6 +154,15 @@
 
       h1 {
         font-size: 24px;
+      }
+
+      .publications-heading,
+      .publications-heading + .paper {
+        width: 100%;
+      }
+
+      .publications-heading {
+        margin-top: 25px;
       }
     }
   </style>
@@ -191,7 +223,7 @@
 
     </div>
 
-    <h2>Publications</h2>
+    <h2 class="publications-heading">Publications</h2>
 
     <div class="paper">
 
