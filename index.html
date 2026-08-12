@@ -18,7 +18,7 @@
     }
 
     .container {
-      max-width: 950px;
+      max-width: 1050px;
       margin: 0 auto;
       padding: 25px;
     }
@@ -30,6 +30,7 @@
       font-size: 25px;
       font-weight: bold;
       text-align: center;
+      white-space: nowrap;
     }
 
     h2 {
@@ -58,16 +59,17 @@
 
     .top-section {
       display: grid;
-      grid-template-columns: 1fr 245px;
+      grid-template-columns: minmax(0, 1fr) 310px;
       gap: 55px;
       align-items: start;
     }
 
     .text-column {
-      margin-top: 49px;
+      margin-top: 48px;
     }
 
     .photo-column {
+      width: 310px;
       text-align: center;
     }
 
@@ -112,22 +114,12 @@
     }
 
     .paper-details a {
-      color: #555;
+      color: #1a5a96;
       text-decoration: none;
     }
 
     .paper-details a:hover {
       text-decoration: underline;
-    }
-
-    .paper-links {
-      margin-top: 2px;
-    }
-
-    .paper-links a {
-      color: #1a5a96;
-      text-decoration: underline;
-      text-underline-offset: 2px;
     }
 
     .status {
@@ -136,11 +128,11 @@
 
     .publications-heading {
       margin-top: -125px;
-      width: calc(100% - 300px);
+      width: calc(100% - 365px);
     }
 
     .publications-heading + .paper {
-      width: calc(100% - 300px);
+      width: calc(100% - 365px);
     }
 
     @media (max-width: 700px) {
@@ -155,6 +147,7 @@
 
       .photo-column {
         order: -1;
+        width: 100%;
       }
 
       .text-column {
@@ -167,6 +160,7 @@
 
       h1 {
         font-size: 24px;
+        white-space: normal;
       }
 
       .publications-heading,
@@ -299,16 +293,6 @@
           target="_blank"
           rel="noopener noreferrer"
         >Evi Pappa</a>
-      </p>
-
-      <p class="paper-details paper-links">
-        <a
-          href="https://cepr.org/publications/dp20637"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CEPR version
-        </a>
       </p>
 
     </div>
